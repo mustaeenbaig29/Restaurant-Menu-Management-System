@@ -1,0 +1,58 @@
+Here's the corrected version of your message:
+
+---
+
+Hi,
+
+First of all, thank you for assigning me this task. I have completed the assignment according to the instructions.
+
+Here are the steps to run this project:
+
+1. There will be two folders present:
+
+   - Backend
+   - Frontend
+
+2. To run the project, you should be outside of these two folders. You should see these two folders named "Backend" and "Frontend."
+
+3. In the VS Code terminal:
+
+   For Frontend:
+   ```
+   cd frontend
+   npm i
+   npm start
+   ```
+
+   For Backend:
+   ```
+   cd backend
+   npm i
+   npx ts-node src/app.ts
+   ```
+
+Project Information:
+
+Tech Stack Used:
+- Front-end: React with TypeScript
+- Back-end: Node.js with TypeScript
+- Database: MongoDB
+- APIs: RESTful
+
+I have successfully implemented all the features:
+
+- Dishes are displayed on the landing page.
+- Users can create dishes.
+- Users can click on "Edit Dish" to edit dish information, and the information is pre-filled.
+- Users can delete dishes.
+
+I have also added a feature to filter dishes based on cuisine.
+
+If you encounter any issues with the backend regarding MongoDB, please don't hesitate to reach out. Your feedback on this assignment is highly appreciated.
+
+For any problems or inquiries, you can contact me via:
+
+Email: mustaeenbaig02@gmail.com
+Phone Number: 9482900560
+
+Thank you.

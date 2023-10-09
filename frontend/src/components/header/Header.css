@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 120px;
+    border-bottom: 1px solid grey;
+  }
+  
+  .logo img {
+    width: 100px; 
+  }
+  
+  
+  .add-dish-button button {
+    padding: 10px 20px;
+    background-color: #c8a97e; 
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    color: white;
+  }
+  
+  .add-dish-button button:hover {
+    background-color: #d9c7a2; 
+  }
+
+  .logo-text {
+    font-size: 24px; 
+    font-weight: bold;
+    text-transform: uppercase; 
+  }
+
+
+@media screen and (max-width: 475px) {
+  .header{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .add-dish-button button{
+    padding: 10px 10px;
+  }
+}

@@ -1,0 +1,237 @@
+.dish_view {
+    height: 100vh;
+  }
+  
+  .dish_category {
+    height: 12vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 50px auto auto auto;
+    text-align: center;
+  }
+  
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    position: relative;
+    padding: 25px;
+    width: 160px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: -10px;
+  }
+  
+  .box:hover {
+    background-color: #d9c7a2;
+  }
+  
+  .box:not(.active)::after {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #007bff transparent transparent transparent;
+  }
+  
+  .box.active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: #c8a97e transparent transparent transparent;
+  }
+  
+  .box.active {
+    background-color: #c8a97e;
+    color: white;
+  }
+  
+  .box h3 {
+    margin: 0;
+  }
+  
+  .dish_list {
+    height: 90vh;
+    width: 80%;
+    margin: 50px auto auto auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .menu_display {
+    height: 35vh;
+    width: 100%;
+    border: 1px solid grey;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .image__box {
+    height: 35vh;
+    width: 100%;
+  }
+  
+  img {
+    height: 35vh;
+    width: 100%;
+  }
+  
+  .DishInfoBox {
+    padding: 20px;
+    width: 80%;
+  }
+  
+  .DishInfoBox h2 {
+    margin-bottom: 15px;
+  }
+  
+  .DishInfoBox p {
+    margin-bottom: 15px;
+  }
+  
+  .edit {
+    padding: 10px 30px;
+    background-color: #c8a97e;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .edit:hover {
+    background-color: #d9c7a2;
+  }
+  
+  .delete {
+    padding: 10px 30px;
+    background-color: #c8a97e;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .delete:hover {
+    background-color: #d9c7a2;
+  }
+  
+  .dish_info {
+    margin-bottom: 2px;
+  }
+  
+  @media screen and (max-width: 1497px) {
+    .box-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .box {
+      flex: 8;
+      box-sizing: border-box;
+    }
+  }
+  
+  @media screen and (max-width: 795px) {
+    .box-container {
+      display: block;
+      align-items: center;
+      margin-top: 310px;
+      margin-bottom: 300px;
+      position: absolute;
+      top: 10%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .dish_category {
+      height: 70vh;
+    }
+  
+    .box {
+      width: 280%;
+    }
+  }
+  
+  @media screen and (max-width: 501px) {
+    .box-container {
+      position: absolute;
+      top: 10%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .box-container {
+      position: absolute;
+      top: 15%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .box {
+      width: 180%;
+    }
+  }
+  
+  @media screen and (max-width: 1213px) {
+    .menu_display {
+      height: 45vh;
+    }
+  
+    .image__box {
+      height: 45vh;
+      width: 100%;
+    }
+  
+    img {
+      height: 45vh;
+      width: 100%;
+    }
+  
+    .dish_info {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+  
+  @media screen and (max-width: 890px) {
+    .dish_list {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .menu_display{
+      height: 80vh;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  
+  @media screen and (max-width: 604px) {
+    .menu_display {
+      height: 85vh;
+    }
+  }
+  
+  @media screen and (max-width: 341px) {
+    .menu_display {
+      height: 90vh;
+    }
+  }
